@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Little Lemon</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.png">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Booking a Table</h1>
+            <form method="post">
+                <!--use fieldset to group the radio button-->
+                <fieldset id="size">
+                    <label>
+                        <input type="radio" value="2" name="size" > 2-person table
+                    </label>
+                    <lable>
+                        <!--4 is the most common option, making it the default option-->
+                        <input type="radio" value="4" name="size" checked> 4-person table
+                    </lable>
+                    <lable>
+                        <input type="radio" value="6" name="size"> 6-person table
+                    </lable>
+                </fieldset>
+                <fieldset id="location">
+                    <label>
+                        <!--indoors is the most common option, making it the default option-->
+                        <input type="radio" value="indoors" name="location" checked> Indoors
+                    </label>
+                    <label>
+                        <input type="radio" value="outdoors" name="location"> Outdoors
+                    </label>
+                </fieldset>
+                <button type="submit">Booking a Table</button>
+            </form>
+        </main>
+        <footer>
+            <p>Copyright Little Lemon</p>
+        </footer>
+    </body>
+</html>
